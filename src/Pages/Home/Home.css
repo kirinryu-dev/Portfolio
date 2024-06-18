@@ -1,7 +1,37 @@
 
 .Home_content {
-    background-color: black ;
+    background-color: #252323 ;
     width: 100%;
     height: 100%;
     color: white ;
+    padding: 2.5em 2.5em;
+    display: flex;
+    justify-content: space-evenly;
+
+}
+
+.content_left {
+    background-color: ;
+    padding: 1em 1em;
+    background-color:  ;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 1em;
+}
+
+p {
+
+}
+
+span {
+    color: #0081F7;
+}
+
+content_left_bottom {
+
+}
+
+img {
+    width: 40%;
+    border-radius: 50%;
 }

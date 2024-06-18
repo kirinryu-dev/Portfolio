@@ -1,7 +1,7 @@
 import Navbar from '../../Components/Navigationbar/Navbar';
 import ButtonContact from '../../Components/Button/ButtonContact';
 import me from '../../Assets/me-no-bkg-simple.png';
-
+import HomeFooter from '../../Components/HomeFooter/HomeFooter';
 
 // custom css 
 import './Home.css'
@@ -28,6 +28,7 @@ const Home = () => {
                     <img src={me} alt="" srcset="" />
                 </div>
             </div>
+            <HomeFooter />
         </div>
     )
 };

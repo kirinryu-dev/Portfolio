@@ -1,0 +1,31 @@
+
+
+.About_content {
+    background-color: hsl(0, 0%, 7%);
+    width: 100%;
+    height: 100%;
+    padding: 2.5em 2.5em;
+
+}
+
+.About_description {
+    color: gray;
+    margin-bottom: 2em;
+}
+
+.About_title {
+    color: gray;
+   
+}
+
+.About_description > p {
+    padding: 2em;
+    font-weight: 200;
+}
+
+h1 {
+    font-weight: 200;
+    font-style: normal;
+
+}
+

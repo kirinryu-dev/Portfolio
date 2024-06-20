@@ -19,49 +19,9 @@ export default function FixedContainer() {
             <Cardgallery />
           </div>
 
-          <div>
-            <Cardgallery />
-          </div>
-
-          <div>
-            <Cardgallery />
-          </div>
-
 
         </div>
 
-        <div className='Project_card'>
-          <div>
-            <Cardgallery />
-          </div>
-
-          <div>
-            <Cardgallery />
-          </div>
-
-          <div>
-            <Cardgallery />
-          </div>
-
-
-        </div>
-
-        <div className='Project_card'>
-          <div>
-            <Cardgallery />
-          </div>
-
-          <div>
-            <Cardgallery />
-          </div>
-
-          <div>
-            <Cardgallery />
-          </div>
-
-
-        </div>
-        
       </Container>
     </React.Fragment>
   );

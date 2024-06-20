@@ -17,6 +17,19 @@
 
 }
 
+.content_top > h1 {
+    margin-bottom: 1em;
+    align-self: self-start;
+    color: gray;
+}
+
+.content_top > p {
+    padding: 2em;
+    font-weight: 200;
+    margin-bottom: 1em;
+    color: gray;
+}
+
 
 h1 {
     font-weight: 200;
@@ -24,19 +37,8 @@ h1 {
 
 }
 
-.content_top h1 {
-    margin-bottom: 1em;
-    align-self: self-start;
-    color: gray;
-}
-
-.content_top p {
-    font-weight: 200;
-    font-style: normal;
-    margin-bottom: 1em;
 
 
-}
 
 .content_bottom {
     color: gray;

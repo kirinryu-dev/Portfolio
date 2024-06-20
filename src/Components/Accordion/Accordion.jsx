@@ -13,7 +13,7 @@ import './Accordion.css'
 export default function AccordionUsage() {
   return (
     <div>
-      <h2>SKILL SET</h2>
+      <h3>SKILL SET</h3>
       <Accordion className='Accordion_content'>
         <AccordionSummary
           expandIcon={<ExpandMoreIcon />}
@@ -24,11 +24,16 @@ export default function AccordionUsage() {
         </AccordionSummary>
         <AccordionDetails>
           <div className='techList'>
-            <li>Framework / Library </li>
+            <li>Framework / Library </li> 
+            <p>NEXT Js / React </p>
             <li>Styling  </li>
+            <p>Vanilla css , Bootstrap , Tailwind , Sass</p>
             <li>Back-End </li>
+            <p>Node js</p>
             <li>Database  </li>
+            <p>MongoDB</p>
             <li>Build Tool</li>
+            <p>Vite</p>
           </div>
         </AccordionDetails>
       </Accordion>

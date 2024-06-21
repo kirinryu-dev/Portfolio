@@ -1,0 +1,47 @@
+
+.me {
+    /* width: 50% !important; */
+    /* height: 50% !important; */
+    /* display: flex; */
+    /* align-self: center; */
+    /* justify-self: center; */
+
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+    max-width: 200px; /* Adjust as needed */
+
+}
+
+/* .contact_card_me:hover::after {
+    content: ' ҡเ૨เɳ૨ყµ👹';
+    margin-left: 10px;
+    font-size: 16px;
+    font-weight: 200;
+
+} */
+
+.contact_card_me:hover::after {
+    opacity: 1; /* Show on hover */
+}
+
+.contact_card_me:hover p {
+    opacity: 0; /* Hide the original content */
+    transition: opacity 0.3s ease-in-out; /* Smooth transition */
+}
+
+
+
+.contact_card_me::after {
+    content: 'ҡเ૨เɳ૨ყµ👹'; /* The text to show on hover */
+    position: absolute;
+    top: 60%;
+    left: 10%;
+    transform: translate(-0%, -0%);
+    white-space: nowrap; 
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+}
+
+

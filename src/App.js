@@ -1,6 +1,7 @@
 import Home from "./Pages/Home/Home";
 import About from "./Pages/About/About";
-import Gallery from './Pages/Gallery/Gallery';
+import Gallery from "./Pages/Gallery/Gallery";
+import Contact from "./Pages/Contact/Contact";
 
 function App() {
   return (
@@ -8,6 +9,7 @@ function App() {
       <Home />
       <About />
       <Gallery />
+      <Contact />
       
     </div>
   );

@@ -1,6 +1,6 @@
 import React from 'react';
 import { Card, CardContent, Typography, CardActions, Button } from '@mui/material';
-import ModalGallery from '../ModalGallery/ModalGallery'; // Adjust the import based on your file structure
+import ModalGallery from '../ModalGallery/ModalGallery'; 
 
 
 // import custom css 
@@ -12,37 +12,43 @@ const cardData = [
     project: "Task Manager",
     type: "add , edit , delete task as complet",
     feature: "Filter tasks by status , notification for task deadlines",
-    example: ''
+    modalContent: 'Hello world ',
+    modalLink: 'Https://'
   },
   {
     project: "E-commerce Store",
     type: "Product listing , product details shopping cart",
     feature: "Checkout process user authentication push notification for promootion",
-    example: ''
+    modalContent: 'wtFFFF',
+    modalLink: 'https://'
   },
   {
     project: "Social Media ",
     type: "Post scheduling , analytics display ",
     feature: "Multiple account management , real time notifications",
-    example: ''
+    modalContent: '',
+    modalLink: 'https://'
   },
   {
     project: "Weather App",
     type: "Current weather , forecast , search by city ",
     feature: "Push notification and alerts favourite location ",
-    example: ''
+    modalContent: '',
+    modalLink: 'https://'
   },
   {
     project: "Recipe App",
     type: "Recipe Search , ingredients filter",
     feature: "User-generated content , step by step coocking instruction",
-    example: ''
+    modalContent: 'zabuza momochi',
+    modalLink: 'https://'
   },
   {
     project: "Chat Application",
     type: "Chat",
     feature: "Real-time messaging , group chat , notificaton for group message",
-    example: '"his ubiquitous influence was felt by all the family"'
+    modalContent: '',
+    modalLink: 'https://'
   }
 ];
 
@@ -69,11 +75,7 @@ const CardList = () => {
             </Typography>
           </CardContent>
           <CardActions>
-            <Button size="small">
-              <div>
-                <ModalGallery />
-              </div>
-            </Button>
+            <ModalGallery content={card.modalContent} link={card.modalLink} />
           </CardActions>
         </Card>
       ))}

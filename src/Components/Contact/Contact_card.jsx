@@ -1,15 +1,14 @@
-import * as React from 'react';
+import React from 'react';
 import Card from '@mui/material/Card';
 import CardContent from '@mui/material/CardContent';
 import CardMedia from '@mui/material/CardMedia';
 import Typography from '@mui/material/Typography';
 import { CardActionArea } from '@mui/material';
-import mePhoto from '../../Assets/me-no-bkg-simple.png'
+import mePhoto from '../../Assets/me-no-bkg-simple.png';
+// import Bread from '../Bread/Bread'
 
-// import custom css 
-
+// Import custom CSS
 import './Contact_card.css';
-
 
 export default function ActionAreaCard() {
   return (
@@ -17,22 +16,24 @@ export default function ActionAreaCard() {
       <CardActionArea>
         <CardMedia
           component="img"
-        //   height="145"
           image={mePhoto}
-          alt=""
+          alt="Tchalim Sam Tanguy"
           className='me'
         />
         <CardContent>
           <Typography gutterBottom variant="h5" component="div">
             <span className='contact_card_me'>
-                <p>Tchalim Sam Tanguy</p>
+              <p>Tchalim Sam Tanguy</p>
             </span>
           </Typography>
           <Typography variant="body2" color="text.secondary">
-            You can use any of these methodes , i'll get back to you as soon as possible
+            You can use any of these methods, I'll get back to you as soon as possible.
           </Typography>
         </CardContent>
       </CardActionArea>
+      <div>
+        {/* <Bread /> */}
+      </div>
     </Card>
   );
 }

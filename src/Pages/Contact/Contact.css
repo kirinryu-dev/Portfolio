@@ -10,6 +10,11 @@
 
 }
 
+.Contact_title > h1 {
+    margin-bottom: 2em;
+    
+}
+
 
 .Contact_card {
     display: flex;

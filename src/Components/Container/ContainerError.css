@@ -1,0 +1,29 @@
+
+.Error_page_container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.Error_page {
+    height: 100dvh;
+    width: 100dvh;
+    color: rgb(14, 97, 241);
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    padding: 2em 2em;
+
+}
+
+.Error_page > h1 {
+    color: white;
+    font-size: 2.5rem;
+    font-weight: 700;
+    
+    margin-bottom: 1.5em;
+    padding: 1em;
+    margin-bottom: 0.5em;
+    border: 0.0325em solid white;
+}

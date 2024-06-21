@@ -23,12 +23,12 @@ const Contact = () => {
 
     return (
         <div className='Contact'>
-            <div>
+            <div className='Contact_title'>
             <h1>Get in Touch</h1>
             </div>
 
             <div className='Contact_card'>
-                
+
             <div className='top_contact'>
                
                <ContactCard />

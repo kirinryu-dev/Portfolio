@@ -5,7 +5,7 @@ import ContainerError from '../../Components/Container/ContainerError';
 // custom csss 
 
 export default function ErrorPage() {
-    const error = useRouteError()
+    const error = useRouteError();
     console.error(error);
 
     return (

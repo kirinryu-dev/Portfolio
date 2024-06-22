@@ -12,8 +12,9 @@ import Button from '@mui/material/Button';
 import Tooltip from '@mui/material/Tooltip';
 import MenuItem from '@mui/material/MenuItem';
 // import AdbIcon from '@mui/icons-material/Adb';
+import { Link } from 'react-router-dom';
 
-// adding custom css 
+// import custom css 
 
 import './Navbar.css' ;
 
@@ -38,6 +39,8 @@ function ResponsiveAppBar() {
   const handleCloseUserMenu = () => {
     setAnchorElUser(null);
   };
+
+  // reminder: error appear becose i put settings mapped in comment so the functions cant access it dont forget; 
 
   return (
     <AppBar position="static" className='Navigation_container'>
@@ -92,11 +95,12 @@ function ResponsiveAppBar() {
               }}
             >
               {pages.map((page) => (
-                <MenuItem key={page} onClick={handleCloseNavMenu}>
-                  <Typography textAlign="center">{page}</Typography>
-                </MenuItem>
-              ))}
-            </Menu>
+                <MenuItem key={page} onClick={handleCloseNavMenu} component={Link} to={`/${page.toLowerCase()}`}>
+                <Typography textAlign="center">{page}</Typography>
+              </MenuItem>
+            ))}
+          </Menu>
+
           </Box>
           {/* <AdbIcon sx={{ display: { xs: 'flex', md: 'none' }, mr: 1 }} /> */}
           <Typography
@@ -129,11 +133,13 @@ function ResponsiveAppBar() {
             ))}
           </Box>
 
-          <Box sx={{ flexGrow: 0 }}>
-            <Tooltip title="Open settings">
-              <IconButton onClick={handleOpenUserMenu} sx={{ p: 0 }}>
-                <Avatar alt="Remy Sharp" src="/static/images/avatar/2.jpg" />
+          <IconButton onClick={handleOpenUserMenu} sx={{ p: 0 }}>
+                <Avatar className='kirinIcon' alt="k" src="../../Assets/code.jpg" />
               </IconButton>
+
+          {/* <Box sx={{ flexGrow: 0 }}>
+            <Tooltip title="Open settings">
+
             </Tooltip>
             <Menu
               sx={{ mt: '45px' }}
@@ -157,7 +163,9 @@ function ResponsiveAppBar() {
                 </MenuItem>
               ))}
             </Menu>
-          </Box>
+          </Box> */}
+
+
         </Toolbar>
       </Container>
     </AppBar>

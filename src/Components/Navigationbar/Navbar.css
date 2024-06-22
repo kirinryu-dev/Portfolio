@@ -9,3 +9,21 @@
 }
 
 
+.kirinIcon {
+    background-color: #0081F7 !important;
+    color: white !important;
+}
+
+
+/* ====== */
+
+.MuiPaper-root {
+    background-color: black !important;
+    color: gray !important;
+
+}
+
+/* .MuiButtonBase-root > .MuiTMenuItem-root:hover {
+    color: #0081F7 !important;
+
+} */

@@ -13,7 +13,7 @@ const Home = () => {
             <Navbar />
             <div className='Home_content'>
                 <div className='content_left'>
-                    <div>
+                    <div className='left_content'>
                     <p>I'm <span>TCHALIM Sam Tanguy</span></p>
                     <p><span>REACT</span> DEVELOPER &</p>
                     <p><span>MARKETING</span> PROFESSIONAL</p>

@@ -11,14 +11,12 @@ import Avatar from '@mui/material/Avatar';
 import Button from '@mui/material/Button';
 import Tooltip from '@mui/material/Tooltip';
 import MenuItem from '@mui/material/MenuItem';
-// import AdbIcon from '@mui/icons-material/Adb';
 import { Link } from 'react-router-dom';
 
-// import custom css 
+// Import custom CSS
+import './Navbar.css';
 
-import './Navbar.css' ;
-
-const pages = ['About', 'Gallery', 'Contact' , 'Blog'];
+const pages = ['About', 'Gallery', 'Contact', 'Blog'];
 const settings = ['Profile', 'Account', 'Dashboard', 'Logout'];
 
 function ResponsiveAppBar() {
@@ -39,8 +37,6 @@ function ResponsiveAppBar() {
   const handleCloseUserMenu = () => {
     setAnchorElUser(null);
   };
-
-  // reminder: error appear becose i put settings mapped in comment so the functions cant access it dont forget; 
 
   return (
     <AppBar position="static" className='Navigation_container'>
@@ -95,12 +91,16 @@ function ResponsiveAppBar() {
               }}
             >
               {pages.map((page) => (
-                <MenuItem key={page} onClick={handleCloseNavMenu} component={Link} to={`/${page.toLowerCase()}`}>
-                <Typography textAlign="center">{page}</Typography>
-              </MenuItem>
-            ))}
-          </Menu>
-
+                <MenuItem
+                  key={page}
+                  onClick={handleCloseNavMenu}
+                  component={Link}
+                  to={`/${page.toLowerCase()}`}
+                >
+                  <Typography textAlign="center">{page}</Typography>
+                </MenuItem>
+              ))}
+            </Menu>
           </Box>
           {/* <AdbIcon sx={{ display: { xs: 'flex', md: 'none' }, mr: 1 }} /> */}
           <Typography
@@ -125,6 +125,8 @@ function ResponsiveAppBar() {
             {pages.map((page) => (
               <Button
                 key={page}
+                component={Link}
+                to={`/${page.toLowerCase()}`}
                 onClick={handleCloseNavMenu}
                 sx={{ my: 2, color: 'white', display: 'block' }}
               >
@@ -134,12 +136,11 @@ function ResponsiveAppBar() {
           </Box>
 
           <IconButton onClick={handleOpenUserMenu} sx={{ p: 0 }}>
-                <Avatar className='kirinIcon' alt="k" src="../../Assets/code.jpg" />
-              </IconButton>
+            <Avatar className='kirinIcon' alt="k" src="../../Assets/code.jpg" />
+          </IconButton>
 
           {/* <Box sx={{ flexGrow: 0 }}>
             <Tooltip title="Open settings">
-
             </Tooltip>
             <Menu
               sx={{ mt: '45px' }}
@@ -164,11 +165,10 @@ function ResponsiveAppBar() {
               ))}
             </Menu>
           </Box> */}
-
-
         </Toolbar>
       </Container>
     </AppBar>
   );
 }
+
 export default ResponsiveAppBar;

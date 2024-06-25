@@ -1,6 +1,7 @@
 import Navbar from '../../Components/Navigationbar/Navbar';
 import ButtonContact from '../../Components/Button/ButtonContact';
 import me from '../../Assets/me-no-bkg-simple.png';
+import { Link } from 'react-router-dom';
 // import HomeFooter from '../../Components/HomeFooter/HomeFooter';
 
 // custom css 

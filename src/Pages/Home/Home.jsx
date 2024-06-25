@@ -1,18 +1,21 @@
-import Navbar from '../../Components/Navigationbar/Navbar';
+import * as React from 'react';
+import CssBaseline from '@mui/material/CssBaseline';
+// import Box from '@mui/material/Box';
+import Container from '@mui/material/Container';
 import ButtonContact from '../../Components/Button/ButtonContact';
-import me from '../../Assets/me-no-bkg-simple.png';
-import { Link } from 'react-router-dom';
-// import HomeFooter from '../../Components/HomeFooter/HomeFooter';
+import me from '../../Assets/me-no-bkg-simple.png'
+import NavBar from '../../Components/Navigationbar/Navbar'
 
-// custom css 
-import './Home.css'
+// import cutom css
+import './Home.css'; 
 
-
-const Home = () => {
-    return (
-        <div>
-            <Navbar />
-            <div className='Home_content'>
+export default function SimpleContainer() {
+  return (
+    <React.Fragment>
+      <CssBaseline />
+      <Container maxWidth="md" >
+        <NavBar />
+      <div className='Home_content'>
                 <div className='content_left'>
                     <div className='left_content'>
                     <p>I'm <span>TCHALIM Sam Tanguy</span></p>
@@ -31,8 +34,7 @@ const Home = () => {
                     </div>
                 </div>
             </div>
-        </div>
-    )
-};
-
-export default Home;
+      </Container>
+    </React.Fragment>
+  );
+}

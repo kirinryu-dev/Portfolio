@@ -6,6 +6,7 @@ import reportWebVitals from './reportWebVitals';
 import ErrorPage from './Pages/Error/ErrorHandling';
 
 // import desired Nav Destination
+import Home from './Pages/Home/Home';
 import About from './Pages/About/About';
 import Gallery from './Pages/Gallery/Gallery';
 import Contact from './Pages/Contact/Contact';
@@ -18,7 +19,7 @@ import {createBrowserRouter, RouterProvider } from 'react-router-dom';
 const router = createBrowserRouter([
   {
     path: '/',
-    element: <App />,
+    element: <Home />,
     errorElement: <ErrorPage />,
     children: [
       {

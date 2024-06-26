@@ -4,7 +4,7 @@ import CssBaseline from '@mui/material/CssBaseline';
 import Container from '@mui/material/Container';
 import ButtonContact from '../../Components/Button/ButtonContact';
 import me from '../../Assets/me-no-bkg-simple.png'
-import NavBar from '../../Components/Navigationbar/Navbar'
+// import NavBar from '../../Components/Navigationbar/Navbar'
 
 // import cutom css
 import './Home.css'; 
@@ -13,8 +13,8 @@ export default function SimpleContainer() {
   return (
     <React.Fragment>
       <CssBaseline />
-      <Container maxWidth="md" >
-        <NavBar />
+      <Container maxWidth="lg" >
+        
       <div className='Home_content'>
                 <div className='content_left'>
                     <div className='left_content'>

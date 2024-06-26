@@ -1,6 +1,5 @@
 import * as React from 'react';
 import CssBaseline from '@mui/material/CssBaseline';
-// import Box from '@mui/material/Box';
 import Container from '@mui/material/Container';
 import ButtonContact from '../../Components/Button/ButtonContact';
 import me from '../../Assets/me-no-bkg-simple.png'
@@ -13,7 +12,9 @@ export default function SimpleContainer() {
   return (
     <React.Fragment>
       <CssBaseline />
-      <Container maxWidth="lg" >
+      <Container maxWidth="lg" 
+      className='Home_container'
+      >
         
       <div className='Home_content'>
                 <div className='content_left'>

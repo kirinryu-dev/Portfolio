@@ -5,6 +5,7 @@
 .Navigation_container {
     background-color: #252323 !important;
     color: white !important;
+    position: fixed;
 
 }
 

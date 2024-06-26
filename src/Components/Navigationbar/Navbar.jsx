@@ -39,7 +39,7 @@ function ResponsiveAppBar() {
   };
 
   return (
-    <AppBar position="static" className='Navigation_container'>
+    <AppBar position="fixed" className='Navigation_container'>
       <Container maxWidth="xl" className='Navigation_content'>
         <Toolbar disableGutters>
           {/* <AdbIcon sx={{ display: { xs: 'none', md: 'flex' }, mr: 1 }} /> */}
@@ -47,7 +47,7 @@ function ResponsiveAppBar() {
             variant="h6"
             noWrap
             component="a"
-            href="#app-bar-with-responsive-menu"
+            href="./Home"
             sx={{
               mr: 2,
               display: { xs: 'none', md: 'flex' },
